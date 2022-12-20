@@ -5,6 +5,7 @@
 package oidc
 
 import (
+	"bytes"
 	"context"
 	"crypto/rand"
 	"encoding/base64"
