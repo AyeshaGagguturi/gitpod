@@ -18,7 +18,7 @@ import (
 var tmplString = `
 <ul>
 	<li><b>🏷️ Name</b> - {{ .Name }}</li>
-	<li><b>🔗 URL<b/> - <a href="https://{{ .Name }}.preview.gitpod-dev.com">{{ .Name }}.preview.gitpod-dev.com</li>
+	<li><b>🔗 URL<b/> - <a href="https://{{ .Name }}.preview.gitpod-dev.com/workspaces">{{ .Name }}.preview.gitpod-dev.com/workspaces</li>
 </ul>
 `
 
