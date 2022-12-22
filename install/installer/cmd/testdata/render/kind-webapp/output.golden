@@ -179,6 +179,14 @@ spec:
       ports:
         - port: 9000
           protocol: TCP
+    - from:
+        - podSelector:
+            matchLabels:
+              app: gitpod
+              component: iam
+      ports:
+        - port: 9876
+          protocol: TCP
   podSelector:
     matchLabels:
       app: gitpod
@@ -3356,6 +3364,10 @@ spec:
     port: 9000
     protocol: TCP
     targetPort: 9000
+  - name: iam-session
+    port: 9876
+    protocol: TCP
+    targetPort: 9876
   - name: debug
     port: 6060
     protocol: TCP
@@ -4809,6 +4821,8 @@ spec:
           name: metrics
         - containerPort: 9000
           name: install-admin
+        - containerPort: 9876
+          name: iam-session
         - containerPort: 6060
           name: debug
         - containerPort: 9229
