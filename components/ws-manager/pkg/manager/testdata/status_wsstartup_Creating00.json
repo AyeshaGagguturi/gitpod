@@ -19,6 +19,7 @@
         "gitpod/id": "foobar",
         "gitpod/servicePrefix": "foobar",
         "gitpod/url": "http://10.0.0.114:8082",
+        "gitpod.io/alereadyInitializing": "true",
         "gitpod/never-ready": "true"
       }
     },
